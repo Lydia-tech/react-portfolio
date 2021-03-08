@@ -1,7 +1,7 @@
 # React Portfolio
 This repo includes code for my portfolio built with React.
 
-Deployed app:
+Deployed app: https://lydia-tech.github.io/react-portfolio/
 
 
 ## Available Scripts
