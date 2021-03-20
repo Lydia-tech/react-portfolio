@@ -1,4 +1,5 @@
 import React from 'react'
+// import ReactDOM from 'react-dom';
 import coverImage from "../../assets/cover/cover-image.jpg";
 
 function About() {

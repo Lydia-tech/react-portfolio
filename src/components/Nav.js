@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+// import ReactDOM from 'react-dom';
 
 function categorySelected(name) {
     console.log(`${name} clicked`)
@@ -28,13 +30,20 @@ function Nav() {
             <li>
               <span>Contact</span>
             </li>
-            {categories.map((category) => (
+
+            <Link to="/budget-tracker">Budget Tracker</Link>
+            <Link to="/hike-now">Hike Now</Link>
+            <Link to="/SLPGoalden">SLP Goalden</Link>
+            <Link to="/work-day-scheduler">Work Day Scheduler</Link>
+            {/* {categories.map((category) => (
               <li className="mx-1" key={category.name}>
+
+
                 <span onClick={() => categorySelected(category.name)} >
                     {category.name}
                   </span>
               </li>
-            ))}
+            ))} */}
           </ul>
         </nav>
       </header>
