@@ -11,7 +11,8 @@ import BudgetTracker from './pages/Budget-Tracker';
 import HikeNow from './pages/Hike-Now';
 import SLPGoalden from './pages/SLP-Goalden';
 import WorkDayScheduler from './pages/Work-Day-Scheduler';
-//import coverImage from "../../assets/cover/cover-image.jpg";
+// import coverImage from "../../assets/cover/cover-image.jpg";
+import Homepage from './pages/Homepage'
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
     <SLPGoalden />
   </Route>
   <Route exact path="/work-day-scheduler" component={WorkDayScheduler}/>
+  <Route exact path="/" component={Homepage}/>
+  
 </Switch>
 </BrowserRouter>
 
