@@ -3,16 +3,16 @@ import Project from '../components/Project'
 
 const projects =[
     {
-        title: 'Project 1', description: 'project1 description'
+        title: 'Budget Tracker', description: 'Keep track of your budget while on the go!'
     },
     {
-        title: 'Project 2', description: 'project2 description'
+        title: 'Hike Now', description: 'Find a trail and the weather when you are out of town!'
     },
     {
-        title: 'Project 3', description: 'project2 description'
+        title: 'SLP Goalden', description: 'Track your students progress with this application.'
     },
     {
-        title: 'Project 4', description: 'project2 description'
+        title: 'Work Day Scheduler', description: 'Keep track of your tasks with this easy to use application.'
     },
 ]
 
