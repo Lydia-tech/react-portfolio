@@ -8,8 +8,7 @@ export default function Homepage() {
     return (
         <div>
             <Nav></Nav>
-            Home 
-
+            <h1>Welcome to my portfolio!</h1>
             <About />
             <ProjectContainer />
             <Footer/>
