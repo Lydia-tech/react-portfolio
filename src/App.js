@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 // import logo from "./logo.svg";
 import About from './components/About';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Project from './components/Project';
+// import Footer from './components/Footer';
+// import Header from './components/Header';
+// import Nav from './components/Nav';
+// import Project from './components/Project';
 import BudgetTracker from './pages/Budget-Tracker';
 import HikeNow from './pages/Hike-Now';
-import SLPGoalden from './pages/SLP-Goalden';
+import SLPGoalden from './pages/SLPGoalden';
 import WorkDayScheduler from './pages/Work-Day-Scheduler';
 // import coverImage from "../../assets/cover/cover-image.jpg";
 import Homepage from './pages/Homepage'
@@ -21,10 +21,10 @@ function App() {
 <Switch>
   <Route exact path="/budget-tracker" component={BudgetTracker}/>
   <Route exact path="/hike-now" component={HikeNow}/>
-  <Route exact path="/SLPGoalden">
-    <SLPGoalden />
-  </Route>
+  <Route exact path="/SLPGoalden" component={SLPGoalden}/>
   <Route exact path="/work-day-scheduler" component={WorkDayScheduler}/>
+  <Route exact path="/about" component={About}/>
+  <Route exact path="/react-portfolio" component={Homepage}/>
   <Route exact path="/" component={Homepage}/>
   
 </Switch>
