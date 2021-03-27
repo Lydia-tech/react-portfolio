@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from "../components/Nav";
 import About from '../components/About'
 import ProjectContainer from '../components/ProjectContainer';
+import Footer from '../components/Footer'
 
 export default function Homepage() {
     return (
@@ -11,7 +12,7 @@ export default function Homepage() {
 
             <About />
             <ProjectContainer />
-            {/* Footer */}
+            <Footer/>
         </div>
     )
 }
