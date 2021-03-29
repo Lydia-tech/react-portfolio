@@ -1,17 +1,46 @@
 import React from 'react';
 // import App from './App';
+import Github from './github-logo';
+import LinkedIn from './linkdin-icon';
+
+const icons = [
+	{
+		name: 'fab fa-github',
+		link: 'https://github.com/Lydia-tech',
+		icon: <Github />
+	},
+	{
+		name: 'fab fa-linkedin',
+		link: 'https://www.linkedin.com/in/lydiakennedy/',
+		icon: <LinkedIn />
+	}
+];
+
+// const Footer = () => (
+//     <div className="footer">
+//       <p>This is some content in sticky footer</p>
+//     </div>
+//   );
 
 function Footer() {
-    return (
-        <footer className="d-flex align-items-center flex-column">
-            <div className="d-flex justify-content-between footer-links">
-            <a href="https://github.com/Lydia-tech" target="_blank" rel="nofollow noopener noreferrer"><i className="fab fa-github contact-link"></i></a>
-            <a href="https://www.linkedin.com//" target="_blank" rel="nofollow noopener noreferrer"><i className="fab fa-linkedin contact-link"></i></a>
-            <a href="mailto:lkennedy@gmail.com"><i className="fas fa-envelope contact-link"></i></a>
-            </div>
-            <a href="https://reactjs.org/" className="mt-3"><p>Built with <i className="fab fa-react icon footer-logo"></i><span> React</span></p></a>
-        </footer>
-    )
+	return (
+		<footer className='footer'>
+			<div className='flex space-x-6 items-center h-10'>
+				{icons.map((icon, i) => (
+					<div key={i++}>
+						<a
+							href={icon.link}
+							key={icon.name}
+							target='__blank'
+							rel='noopener noreferrer'
+						>
+							{icon.icon}
+						</a>
+					</div>
+				))}
+			</div>
+		</footer>
+	);
 }
 
 export default Footer;

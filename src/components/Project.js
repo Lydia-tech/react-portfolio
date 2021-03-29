@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Project({project}) {
+
+    
     return (
         <div>
             <h3>{project.title}</h3>

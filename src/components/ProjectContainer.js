@@ -23,7 +23,9 @@ function ProjectContainer() {
             {projects.map((project, index) => (
                 <Project key={index} project={project}/>
             ))}
+            
         </div>
+        
     )
 }
 

@@ -7,5 +7,6 @@ export default function SLPGoalden() {
             <Nav></Nav>
           SLP Goalden  
         </div>
+        
     )
 }
