@@ -24,11 +24,13 @@ function Nav() {
         </h2>
         <nav>
           <ul className="flex-row">
-            <Link to="/about">About Me</Link>
-            <Link to="/budget-tracker">Budget Tracker</Link>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href={process.env.PUBLIC_URL + '/' + '/assets/resume-2021.pdf'}download>Resume</a>
+            {/* <Link to="/budget-tracker">Budget Tracker</Link>
             <Link to="/hike-now">Hike Now</Link>
             <Link to="/SLPGoalden">SLP Goalden</Link>
-            <Link to="/work-day-scheduler">Work Day Scheduler</Link>
+            <Link to="/work-day-scheduler">Work Day Scheduler</Link> */}
             {/* {categories.map((category) => (
               <li className="mx-1" key={category.name}>
 
