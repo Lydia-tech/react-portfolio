@@ -16,11 +16,6 @@ const icons = [
 	}
 ];
 
-// const Footer = () => (
-//     <div className="footer">
-//       <p>This is some content in sticky footer</p>
-//     </div>
-//   );
 
 function Footer() {
 	return (
@@ -33,6 +28,7 @@ function Footer() {
 							key={icon.name}
 							target='__blank'
 							rel='noopener noreferrer'
+							className="w-25 h-25"
 						>
 							{icon.icon}
 						</a>

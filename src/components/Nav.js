@@ -1,17 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-// import ReactDOM from 'react-dom';
 
-// function categorySelected(name) {
-//     console.log(`${name} clicked`)
-// }
+
+
 function Nav() {
-    // const  categories = [
-    //     { name: 'Budget Tracker', description: 'Keep track of your budget while on the go!' },
-    //     { name: 'Hike Now', description: 'Find a trail and the weather when you are out of town!' },
-    //     { name: 'SLP Goalden', description: 'Track your students progress with this application.' },
-    //     { name: 'Work Day Scheduler', description: 'Keep track of your tasks with this easy to use application.' },
-    // ];
+    
     return (
       <header>
         <h2>
@@ -22,24 +14,16 @@ function Nav() {
             Hello World!
           </a>
         </h2>
-        <nav>
+        <nav className="navbar navbar-light bg-light">
           <ul className="flex-row">
-            <a href="#about">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href={process.env.PUBLIC_URL + '/' + '/assets/resume-2021.pdf'}download>Resume</a>
-            {/* <Link to="/budget-tracker">Budget Tracker</Link>
-            <Link to="/hike-now">Hike Now</Link>
-            <Link to="/SLPGoalden">SLP Goalden</Link>
-            <Link to="/work-day-scheduler">Work Day Scheduler</Link> */}
-            {/* {categories.map((category) => (
-              <li className="mx-1" key={category.name}>
-
-
-                <span onClick={() => categorySelected(category.name)} >
-                    {category.name}
-                  </span>
-              </li>
-            ))} */}
+          <button type="button" className="btn btn-secondary ">
+            <a href="#about"className="text-light">About Me</a></button>
+            <button type="button" className="btn btn-secondary">
+            <a href="#portfolio"className="text-light">Portfolio</a>
+            </button>
+            <button type="button" className="btn btn-secondary">
+            <a href={`${process.env.PUBLIC_URL}/assets/resume-2021.pdf`}download className="text-light">Resume</a></button>
+            
           </ul>
         </nav>
       </header>

@@ -3,7 +3,7 @@ const LinkedIn = ({ ...props }) => {
 		<>
 			<span className='sr-only'>LinkedIn</span>
 			<svg
-				className={'w-7 h-7'}
+				className={'w-25 h-25'}
 				fill='currentColor'
 				viewBox='0 0 20 20'
 				aria-hidden='true'
